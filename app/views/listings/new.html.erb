@@ -1,5 +1,2 @@
 <h1>Hello from new</h1>
-<%= simple_form_for(listing) do |f| %>
-  <%= f.input :num_rooms %>
-  <%= f.submit %>
-<% end %>
+<%= render 'new_listing', listing: @listing %>
