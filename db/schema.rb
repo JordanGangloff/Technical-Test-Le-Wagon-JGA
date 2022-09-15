@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_15_101206) do
+ActiveRecord::Schema[7.0].define(version: 2022_09_15_130358) do
   create_table "bookings", force: :cascade do |t|
     t.string "start_date"
     t.string "end_date"
@@ -31,6 +31,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_15_101206) do
     t.integer "listing_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "price"
+    t.string "date"
     t.index ["listing_id"], name: "index_missions_on_listing_id"
   end
 
