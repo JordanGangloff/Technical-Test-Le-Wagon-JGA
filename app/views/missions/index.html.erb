@@ -1,0 +1,9 @@
+<h1>Missions#index</h1>
+<%= @missions.each do |mission| %>
+  <ul>
+    <li><%= mission.listing_id %></li>
+    <li><%= mission.type_of_mission %></li>
+    <li><%= mission.date %></li>
+    <li><%= mission.price %></li>
+  </ul>
+<% end %>
